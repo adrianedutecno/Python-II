@@ -54,8 +54,12 @@ def excepcion_propia():
         print(f'Error: ingreso no es valido')
     except CustomException as e:
         print(f'Error: {e} y manejada')
-        print(f'Error: {e.codigo}')
-
-        
+        print(f'Error: {e.codigo}')      
         
 excepcion_propia()
+
+# ejemplo de respuesta
+# {
+#     'mensaje': 'Excepcion propia ejecutada',
+#     'codigo': 460
+# }  

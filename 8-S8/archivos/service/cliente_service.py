@@ -46,3 +46,31 @@ class ClienteService:
         print('Lista de clientes: ')
         for cliente in self._clientes:
             print(cliente)
+            
+    #metodo para obtener un clientes en la lista existente por rut
+    def get_cliente_by_rut(self, rut):
+        for cliente in self._clientes:  #recorriendo toda la lista de clientes existentes
+            if cliente.rut == rut: #se filtra el cliente por rut
+                return cliente #retorna el cliente encontrado
+        return None #si no sucede lo que esta dentro del ciclo for, retorna None
+    
+    #,metodo para editar el cliente
+    def edit_cliente(self):
+        rut = input("Ingrese el rut del cliente a editar: ")
+        for cliente in self._clientes: 
+            if cliente.rut == rut:
+                    print("Cliente encontrado: ")
+                    cliente.nombre = input("Ingrese nuevo nombre del cliente")
+                    cliente.apellido = input("Ingrese el nuevo apellido del cliente")
+                    cliente.descuento = input("Ingrese el nuevo descuento del cliente")
+                    
+                    #se guarda la lista de nuevo en el archivo
+                    self.save_clientes()
+                    print("Cliente editado éxitosamente: ")
+                    print(cliente)
+        print('Cliente no encontrado')    
+            
+# [
+# "Cliente(nombre=cliente1, apellido=cliente1, rut=1-1, descuento=0.1)",
+# "Cliente(nombre=cliente1, apellido=cliente1, rut=1-1, descuento=0.1)"
+# ]

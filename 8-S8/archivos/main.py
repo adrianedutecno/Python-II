@@ -19,6 +19,9 @@ def main():
             case "3":
                 cliente_service.list_clientes()
             case "4":
+                rut = input('Ingrese el rut del cliente a buscar: ')
+                print(cliente_service.get_cliente_by_rut(rut))
+            case "5":
                 print("Saliendo del Programa")
                 break
             case _:

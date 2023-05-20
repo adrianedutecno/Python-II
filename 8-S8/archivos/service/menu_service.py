@@ -5,5 +5,6 @@ class MenuService: #la funcion de esta clase es llevar todos los metodos que se 
         print('1. Crear Cliente')
         print('2. Crear Supervisor')
         print('3. Listar Clientes')
-        print('4. Salir')
+        print('4. Buscar Cliente por rut')
+        print('5. Salir')
     

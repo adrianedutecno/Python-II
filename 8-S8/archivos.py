@@ -31,7 +31,7 @@ def create_file():
     datos = []
     with open('nombre_archivo.txt','w') as file:
             file.writelines(datos) #crear el archivo si no existe, w es para escribir
-            
+    
 #crear solo el arhivo y no cerrarlo automaticamente
 def create_file():
     file = open('nombre_archivo.txt','w') #se crea el arhivo

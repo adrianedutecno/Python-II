@@ -33,7 +33,7 @@ def leer_archivo():
 
 def escribir_archivo(lista):
     try:
-        with open('informacion.dat', 'w') as file:
+        with open('informacion.dat', 'w', encoding='utf-8') as file:
             for dato in lista:
                 file.write(dato+"\n")
 

@@ -40,7 +40,6 @@ class Bicicleta(Vehiculo):
         self.tipo = tipo
         
     
-
 #clase Motocicleta hereda de Bicicleta
 class Motocicleta(Bicicleta):
     def __init__(self, marca, modelo, numero_ruedas, tipo, numero_radios, cuadro, motor) -> None:
@@ -48,6 +47,10 @@ class Motocicleta(Bicicleta):
         self.numero_radios = numero_radios
         self.cuadro = cuadro
         self.motor = motor
+        
+        
+#crear las instancias necesarias para practicar
+#verificar las instancias con isinstance(), funcion o metodo para verificar de que tipo es el dato u objeto
 
 
 

@@ -12,7 +12,7 @@ class Vehiculo:
     def guardar_datos_csv(self,nombre_archivo):
         try: #intentar ejecutar
             archivo = open(nombre_archivo, "a+", newline='') # a+ abre el archivo y escribe, si no existe lo crea
-            datos = [(self.__class__.__name__, self.__dict__)] # se crea una lista con tupla interna
+            datos = [(self.__class__, self.__dict__)] # se crea una lista con tupla interna
             archivo_csv = csv.writer(archivo) # se apertura la escritura del archivo
             archivo_csv.writerows(datos) # se escribe dentro del archivo
             archivo.close() # se cierra el archivo
@@ -109,6 +109,8 @@ carga.guardar_datos_csv('vehiculos.csv')
 bicicleta.guardar_datos_csv('vehiculos.csv')
 motocicleta.guardar_datos_csv('vehiculos.csv')
 print(particular.recuperar_datos_csv('vehiculos.csv'))
+
+print(str(type(particular)))
 
         
 

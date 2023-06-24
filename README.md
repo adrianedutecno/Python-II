@@ -1,4 +1,4 @@
-# Modulo Python 2, Programación avanzanda en lenguaje Python
+# Módulo Python 2, Programación avanzanda en lenguaje Python
 
 _Proyectos que permiten la ejemplificación de códigos en python, con diferente complejidad.
 
